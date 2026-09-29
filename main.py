@@ -30,3 +30,8 @@ class CustomerCreate(BaseModel):
 class Transaction(BaseModel):
     amount: float
     type: str 
+
+#getter for customer
+@app.get("/customers")
+def get_customers():
+    return customers
